@@ -1,0 +1,14 @@
+{%extends 'app/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+	<div class="container-fluid form-style">
+		<div class="form-inp ml-auto mr-auto">
+			<h3>download your json converted file</h3>
+			<form class="filesform" method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+					<a href="{{ jsonFullPath }}" download  class="btn btn-dark float-right">Download</a>
+				</div>
+			</form>
+		</div>
+	</div>
+{%endblock content%}

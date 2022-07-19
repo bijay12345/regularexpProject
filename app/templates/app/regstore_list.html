@@ -1,0 +1,27 @@
+{%extends 'app/base.html'%}
+{%block content%}
+	<div class="row">
+		{%for file in regs%}
+			<div class="col-lg-3 col-md-4  card-list">
+				<div class="card">
+					<div class="card-header">
+						<h4><span><small class="text-muted">{{forloop.counter}}.) </small></span>Your Regular Expressions: </h4>
+					</div>
+				  <div class="card-body">
+				    <p class="card-text">Description: {{file.title}}</p>
+				  </div>
+				  <div class="card-body">
+				  	<p>The Expression to be searched: </p>
+				    <p class="card-text">({{file.expression}})</p>
+				  </div>
+				  <div class="regbtn">
+				  	<a href="{%url 'regdetail' file.id%}" class="btn btn-outline-info mt-2 ml-3">Details</a>
+				  </div>
+				  <div class="regd">
+				  	<small class="text-muted" style="float: right; padding-top: 4;">{{file.date_created|date:"d F, Y" }}</small>  
+				  </div>
+				</div>
+			</div>
+		{%endfor%}
+	</div>
+{%endblock content%}

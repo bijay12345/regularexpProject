@@ -1,0 +1,55 @@
+body{
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+
+
+#title{
+	background-color: #1F4690;
+}
+
+/*for fileupload*/
+
+.form-style{
+	margin: 10px auto 60px auto;
+}
+
+.fileInput{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 1.5rem;
+}
+
+.form-inp{
+	font-family: 'Oswald', sans-serif;
+	color: #293462;
+	padding: 30px 0 0 20px;
+	border: 1px solid;
+	border-color: #F9F9F9;
+	border-style: outset;
+  	border-width: 7px;
+	width: 600px;
+	line-height: 2;
+	background-color: #74EBD5;
+	background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+}
+.form-group{
+	line-height: 40px;
+}
+/* end of fileupload */
+
+/*card list modifications*/
+
+.card-list{
+	padding: 3px 5px 3px 5px;
+}
+.defaultImg{
+	height: 100px;
+	width: 100px;
+}
+.nav-link{
+	margin: 0 10px 0 0;
+}
+.btn-outline-info{
+	color: black;
+}

@@ -1,0 +1,6 @@
+{%extends 'app/base.html'%}
+{%block content%}
+	<h1>{{object.expression}}</h1>
+	<h2>{{object.date_created}}</h2>
+	<a href="{%url 'regList'%}" class="btn btn-outline-info">Return</a>
+{%endblock content%}
